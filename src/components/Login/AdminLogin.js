@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const VolunteerLogin = () => {
+const MemberLogin = () => {
   return (
     <div>
       <div>
@@ -79,7 +79,7 @@ const VolunteerLogin = () => {
               </div>
 
               <div>
-                <Link to={{ pathname: '/VolunteerProfile' }}>
+                <Link to={{ pathname: '/AdminProfile' }}>
                   <button
                     type='submit'
                     className='group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
@@ -111,4 +111,4 @@ const VolunteerLogin = () => {
   );
 };
 
-export default VolunteerLogin;
+export default MemberLogin;

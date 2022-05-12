@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const MemberProfile = () => {
   return (
     <div>
@@ -39,8 +39,15 @@ const MemberProfile = () => {
           <div className='font-extrabold text-2xl'>
             Zipcode: <span className='font-bold'>400089</span>
           </div>
-          <div className='my-6 cursor-pointer bg-cyan-200 hover:bg-cyan-400 h-10 w-28 text-center p-2 rounded'>
-            Update
+          <div className='flex'>
+            <div className='my-6 mx-2 cursor-pointer bg-cyan-200 hover:bg-cyan-400 h-10 w-28 text-center p-2 rounded'>
+              Update
+            </div>
+            <Link to={{ pathname: '/SelectPartner' }}>
+              <div className='my-6 mx-2 cursor-pointer bg-cyan-200 hover:bg-cyan-400 h-16 w-28 text-center p-2 rounded'>
+                Select Partner
+              </div>
+            </Link>
           </div>
         </div>
         <div>
